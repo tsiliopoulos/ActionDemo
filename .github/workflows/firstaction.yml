@@ -1,7 +1,11 @@
 name: Hello Actions
 
-on: [push]
-
+on:
+  push:
+    branches: 
+      - master
+  pull_request:
+    types: [closed]
 jobs:
   build:
 
